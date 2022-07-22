@@ -1,0 +1,212 @@
+/*  _    _          ___           __ _     (R)
+ * | |  (_)_ _____ / __|___ _ _  / _(_)__ _
+ * | |__| \ V / -_) (__/ _ \ ' \|  _| / _` |
+ * |____|_|\_/\___|\___\___/_||_|_| |_\__, |
+ *                                    |___/
+ * Copyright (c) 2009-2012 Keppler IT GmbH.
+ * ---------------------------------------------------------------------------
+ * $Id: lc-api.css 1723 2012-08-11 09:31:56Z kk $
+ *
+ * lc-api.css
+ * Cascading style sheet for IFRAME API pages
+ * ---------------------------------------------------------------------------
+ */
+
+body { margin:0; padding:2px 0px; border:0; background:url(bg.png); }
+body, p, td, th, input, select, li { font-family: Arial, Helvetica, sans-serif; font-size:12px; color:#464646; line-height:15px; }
+h1 { font-weight:normal; font-size:26px; text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.2); }
+h2 { font-weight:normal; font-size:18px; border-bottom:1px solid #AAAAAA; }
+p.error { font-weight:bold; color:#990000; }
+a > img { border:0; }
+
+/* ---------------------------------------------------------------------------
+ * Info box (top-right)
+ * ------------------------------------------------------------------------ */
+#dIframeInfo { float:right; margin:8px 20px 8px 10px;  width:300px; padding:10px; border:1px dashed #DDDD77; background-color:#FFFF99; line-height:140%;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------------------------------------------------------
+ * Normal buttons
+ * ------------------------------------------------------------------------ */
+
+a.button {
+  text-decoration:none;
+  border:none;
+  background:url(btn.gif) no-repeat right 0px;
+  padding: 3px 0px 6px 0px;
+  cursor:pointer;
+  outline:none;
+  font-size:12px;
+  white-space:nowrap;
+  zoom:1.0; /* for old IE */
+}
+
+a.button span {
+  background:url(btn-default.gif) no-repeat left 0px;
+  padding: 3px 12px 6px 10px;
+  color:#000000;
+}
+a.button:hover {
+  background-position:right -25px;
+}
+
+a.button:hover span {
+  background-position:left -25px;
+}
+
+a.button:focus {
+  background-position:right -50px;
+}
+
+a.button:focus span {
+  background-position:left -50px;
+}
+
+a.buttonDisabled, a.buttonDisabled:hover, a.buttonDisabled:focus {
+  background-position:right -75px;
+}
+
+a.button:active {
+  position:relative;top:1px;left:1px;
+}
+
+a.button span.add { background-image:url(btn-add.gif); padding-left:26px; }
+a.button span.cancel { background-image:url(btn-cancel.gif); padding-left:26px; }
+a.button span.delete { background-image:url(btn-delete.gif); padding-left:26px; }
+a.button span.doc { background-image:url(btn-doc.gif); padding-left:26px; }
+a.button span.edit { background-image:url(btn-edit.gif); padding-left:26px; }
+a.button span.forward { background-image:url(btn-forward.gif); padding-left:26px; }
+a.button span.idea { background-image:url(btn-idea.gif); padding-left:26px; }
+a.button span.manage { background-image:url(btn-manage.gif); padding-left:26px; }
+a.button span.ok { background-image:url(btn-ok.gif); padding-left:26px; }
+a.button span.password { background-image:url(btn-password.gif); padding-left:26px; }
+a.button span.regenerate { background-image:url(btn-regenerate.gif); padding-left:26px; }
+a.button span.remove { background-image:url(btn-remove.gif); padding-left:26px; }
+a.button span.upload { background-image:url(btn-upload.gif); padding-left:26px; }
+
+a.buttonDisabled span, a.buttonDisabled:hover span, a.buttonDisabled:focus span { background-position:0px -75px; color:#A3A3A3; cursor:default; }
+a.buttonDisabled:active { top:0px;left:0px; }
+
+a.button.wait { background:url(btn-wait-bg.gif) no-repeat right 0px; }
+a.button.wait:active { top:0px;left:0px; }
+a.button.wait span { background:url(btn-wait.gif) no-repeat 0px 0px; color:#999999; }
+
+/* ---------------------------------------------------------------------------
+ * Simple form table
+ * ------------------------------------------------------------------------ */
+table.tabForm {
+  border-collapse:collapse;
+  margin:0; padding:0;
+}
+
+table.tabForm > tbody > tr > th {
+  text-align:right;
+  color:#777777;
+  font-weight:normal;
+  padding:1px 6px 1px 2px;
+}
+
+table.tabSimple > tbody > tr > td {
+  padding:1px 6px 1px 2px;
+}
+
+input[type="text"], textarea {
+  background:url(bg-input.gif) 0px 0px;
+  border:1px solid #CCCCCC;
+  padding-left:3px;
+}
+
+textarea {
+  overflow:auto;
+}
+
+/* ---------------------------------------------------------------------------
+ * Box table (rounded corners, shadow)
+ * ------------------------------------------------------------------------ */
+
+table.tabBox {
+  margin-left:5px;
+  background-color:#FFFFFF;
+  border:1px solid #CCCCCC;
+  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.10); -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.10); box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.10);
+  border-spacing:0;
+  }
+table.tabBox > tbody > tr > th {
+  font-size:11px; font-weight:bold; line-height:11px; color:#666666;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.10);
+  padding:3px 10px 5px 10px;
+  }
+table.tabBox > tbody > tr:first-child {
+  background: #f9f5f4;
+  background: -moz-linear-gradient(top, #f9f5f4 0%, #f1e9e7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f5f4), color-stop(100%,#f1e9e7));
+  background: -webkit-linear-gradient(top, #f9f5f4 0%,#f1e9e7 100%);
+  background: -o-linear-gradient(top, #f9f5f4 0%,#f1e9e7 100%);
+  background: -ms-linear-gradient(top, #f9f5f4 0%,#f1e9e7 100%);
+  background: linear-gradient(to bottom, #f9f5f4 0%,#f1e9e7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f5f4', endColorstr='#f1e9e7',GradientType=0 );
+  }
+table.tabBox > tbody > tr > td { padding:2px 8px; xbackground-color:#FFFFFF; color:#888888; }
+table.tabBox > tbody > tr > td.num { text-align:right; }
+table.tabBox > tbody > tr + tr + tr > td { border-top:1px solid #CCCCCC; }
+
+/* ---------------------------------------------------------------------------
+ * Data table
+ * ------------------------------------------------------------------------ */
+
+table.tabData {
+  border:1px solid #DDDDDD;
+  margin:0; padding:0; border-collapse:collapse;
+}
+
+table.tabData > tbody > tr > th {
+  background: #eeeeee;
+  background: -moz-linear-gradient(top,  #eeeeee 0%, #e0e0e0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#e0e0e0));
+  background: -webkit-linear-gradient(top,  #eeeeee 0%,#e0e0e0 100%);
+  background: -o-linear-gradient(top,  #eeeeee 0%,#e0e0e0 100%);
+  background: -ms-linear-gradient(top,  #eeeeee 0%,#e0e0e0 100%);
+  background: linear-gradient(to bottom,  #eeeeee 0%,#e0e0e0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#e0e0e0',GradientType=0 );
+  text-align:left;
+  padding:1px 4px 1px 4px;
+}
+
+table.tabData > tbody > tr > th.sorted {
+  background: #e5e7eb;
+  background: -moz-linear-gradient(top,  #e5e7eb 0%, #d7d9dd 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e7eb), color-stop(100%,#d7d9dd));
+  background: -webkit-linear-gradient(top,  #e5e7eb 0%,#d7d9dd 100%);
+  background: -o-linear-gradient(top,  #e5e7eb 0%,#d7d9dd 100%);
+  background: -ms-linear-gradient(top,  #e5e7eb 0%,#d7d9dd 100%);
+  background: linear-gradient(to bottom,  #e5e7eb 0%,#d7d9dd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e7eb', endColorstr='#d7d9dd',GradientType=0 );
+}
+
+table.tabData > tbody > tr { 
+  background-color:#FFFFFF;
+}
+
+table.tabData > tbody > tr:nth-child(2n+1) {
+  background-color:#F6F6F6;
+}
+
+table.tabData > tbody > tr > td {
+  font-size:11px;
+  padding:2px 4px 2px 4px;
+}
+
+table.tabData > tbody > tr > td.right, table.tabData > tbody > tr > th.right {
+  text-align:right;
+}
+
+/* ---------------------------------------------------------------------------
+ * Icon table
+ * ------------------------------------------------------------------------ */
+
+table.tabIcons > tbody > tr > th, tabIcons > tbody > tr > td { vertical-align:top; }
+table.tabIcons > tbody > tr > td > h3 { margin:3px 0px; color:#666666; text-shadow: 0px 1px 1px rgba(128, 128, 128, 0.2); }
+
+/* <EOF> ------------------------------------------------------------------ */
