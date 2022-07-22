@@ -8,6 +8,7 @@
 * Umprogrammierung Buttons
 
 ######################################
+
 21.07.2022 - Version: 21072022_RC3
 + Download als ZIP statt RAR
 + Changelog Modal
@@ -15,10 +16,12 @@
 ! Bootstrap 4.6.0 -> 4.6.2
 
 ######################################
+
 07.07.2021 - Version: 772021_RC1
 * Code Upgrade fuer PHP7.4 (statt PHP7.2)
 
 ######################################
+
 06.07.2021 - Version: 762021_RC3
 * Quellcode Überarbeitung
 * Zentrierung des Checks
@@ -27,11 +30,11 @@
 ! Fontawesome/jQuery/Bootstrap
 
 ######################################
-#
-# L e g e n d e
-# + Neues Feature
-# - Entfernte Funktion
-# * Bug
-# ! Upgrade
-#
+
+L e g e n d e
++ Neues Feature
+- Entfernte Funktion
+* Bug
+! Upgrade
+
 ######################################
