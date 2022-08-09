@@ -4,6 +4,12 @@ com, net, org, co.uk, edu, mil, ac, af, am, as, at, be, br, ca, cc, cx, cz, de, 
 
 Made with ♥, Bootstrap 5.2.0, Fontawesome 6.1.1 and jQuery 3.6.0 by Christoph Herthel
 
-Newest Version: 22.07.2022 - Version: 22072022_RC17
+#Newest Version:
+22.07.2022 - Version: 22072022_RC17
 
-Changelog siehe: CHANGELOG.md
+#System Requirements:
+- PHP 7.4 or higher
+- nGinx or apache Web Server
+
+#Changelog:
+take care of: CHANGELOG.md
