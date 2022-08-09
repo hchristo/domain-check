@@ -6,18 +6,15 @@
 * Umprogrammierung Checkboxen
 * Umprogrammierung Buttons
 
-######################################
 21.07.2022 - Version: 21072022_RC3
 + Download als ZIP statt RAR
 + Changelog Modal
 ! Font Awesome 5.15.3 -> 5.15.4
 ! Bootstrap 4.6.0 -> 4.6.2
 
-######################################
 07.07.2021 - Version: 772021_RC1
 * Code Upgrade fuer PHP7.4 (statt PHP7.2)
 
-######################################
 06.07.2021 - Version: 762021_RC3
 * Quellcode Überarbeitung
 * Zentrierung des Checks
